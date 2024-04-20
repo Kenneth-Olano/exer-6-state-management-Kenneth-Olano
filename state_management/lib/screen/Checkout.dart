@@ -49,7 +49,7 @@ class Checkout extends StatelessWidget { //checkout page is a stateless widget
             ElevatedButton( //pay now button
               child: const Text("Pay Now"),
               onPressed: () {
-                context.read<ShoppingCart>().removeAll(); //since we are accessing a function, we can use read function from the model
+                context.read<ShoppingCart>().removeAll(); //since we are accessing a function, we can use read function from the model. removeAll is called which means that when the checkout button is pressed, all items in the cart will be removed and the total cost will be reset to 0
                 ScaffoldMessenger.of(context).showSnackBar( const SnackBar( //show pop up message
                 content: Text("Payment successful!"),
                 duration: Duration(seconds: 1, milliseconds:
