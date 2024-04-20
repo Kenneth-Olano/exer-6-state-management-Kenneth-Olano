@@ -31,7 +31,7 @@ class MyCart extends StatelessWidget {
                   ElevatedButton( //checkout button
                     onPressed: () {
                       Navigator.push(context, 
-                      MaterialPageRoute(builder: (context) => Checkout()));
+                      MaterialPageRoute(builder: (context) => Checkout())); //pushes checkout page to the stack
                     },
                     child: const Text("Checkout")
                   ),
